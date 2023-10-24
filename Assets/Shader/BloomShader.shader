@@ -3,7 +3,7 @@ Shader "Custom/BloomShader"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Intensity ("Bloom Intensity", Range(0, 10)) = 1.0
+        _Intensity ("Bloom Intensity", Range(0, 0.4)) = 0.1
         _BrightnessThreshold ("Brightness Threshold", Range(0, 1)) = 0.5
     }
 
