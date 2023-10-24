@@ -7,15 +7,17 @@ using UnityEngine;
 public class Bloom : MonoBehaviour
 {
     public Material bloomMaterial;
-    [Range(0, 10)] public float bloomlntensity = 1.0f;
+    [Range(0, 10)] public float bloomIntensity = 1.0f;
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        if(bloomMaterial == null)
+        if (bloomMaterial == null)
+        {
             Graphics.Blit(source, destination);
             return;
+        }
         
-        bloomMaterial.SetFloat("_Intensity",bloomlntensity);
+        bloomMaterial.SetFloat("_Intensity", bloomIntensity);
         
         Graphics.Blit(source, destination, bloomMaterial);
     }

@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloomMaterial: {fileID: 2100000, guid: aa74a733321e5d54e9fdd9102289a843, type: 2}
-  bloomlntensity: 1
+  bloomIntensity: 1
 --- !u!1 &985538183
 GameObject:
   m_ObjectHideFlags: 0
